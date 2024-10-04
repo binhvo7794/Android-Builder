@@ -1,11 +1,11 @@
 [
     {
         "kernelSource": {
-            "name": "Mi CC 9e",
-            "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
-            "branch": "laurus-q-oss",
-            "device": "laurus-q-oss",
-            "defconfig": "vendor/wayne_defconfig"
+            "name": "spes",
+            "repo": "https://github.com/muralivijay/kernel_xiaomi_sm6225",
+            "branch": "main",
+            "device": "spes",
+            "defconfig": "vendor/spes-perf_defconfig"
         },
         "toolchains": [
             {
@@ -57,9 +57,13 @@
         },
         "AnyKernel3": {
             "use": true,
-            "release": true
+            "release": true,
+	    "custom": {
+		"repo": "https://github.com/binhvo7794/AnyKernel3",
+		"branch": "spes"
+	    }
         },
-        "enableKernelSU": true,
-        "enableLXC": true
+        "enableKernelSU": false,
+        "enableLXC": false
     }
 ]
